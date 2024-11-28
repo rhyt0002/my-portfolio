@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "-7__kImZg6FbZKpgr",
+        });
+      })();
+    </script>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+          <nav>
+            <div class="nav">
+              <img src="Images/Logo.png" alt="Rhythm-logo" class="logo" />
+              <!-- Hamburger Icon -->
+              <div class="hamburger" aria-label="Toggle Navigation">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+              <!-- Navigation Links -->
+              <div class="links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </div>
+              <!-- Arrow icon to close the menu -->
+              <div class="close-arrow" aria-label="Toggle Navigation">
+                <img src="Images/up-arrow.svg" alt="up-arrow" class="logo-up" />
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+    <main>
+        <div class="wrapper">
+        <section class="portfolio">
+            <h1>My Portfolio</h1>
+            <div class="portfolio-grid">
+                <!-- Add 12 portfolio items dynamically using JS -->
+            </div>
+        </section>
+        </div>
+    </main>
+    <footer>
+        <footer>
+            <div class="wrapper">
+              <h3>Rhythm's Portfolio</h3>
+              <div class="footer">
+                <div class="social-media-links">
+                  <a href="https://www.instagram.com/rhythmsandhu03/"><img src="Images/instagram.png" alt="Instagram-logo"></a>
+                  <a href="https://www.linkedin.com/in/rhythm-a17580299/"><img src="Images/linkedin.png" alt="linkedin-logo"></a>
+                </div>
+                <p>&copy; 2024 Rhythm's Portfolio</p>
+              </div>
+            </div>
+          </footer>
+      </footer>
+    <script src="index.js"></script>
+</body>
+</html>
