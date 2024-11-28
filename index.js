@@ -1,4 +1,14 @@
-// script.js
+document.querySelector('.hamburger').addEventListener('click', function() {
+    document.querySelector('.nav').classList.toggle('active');
+    document.querySelector('.close-arrow').style.display = 'block'; 
+  });
+  
+  document.querySelector('.close-arrow').addEventListener('click', function() {
+    document.querySelector('.nav').classList.remove('active');
+    document.querySelector('.close-arrow').style.display = 'none'; 
+  });
+
+// script.js portfolio
 const projects = [
     {
         title: "Website Devlopment",
@@ -87,15 +97,4 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-
-document.querySelector('.hamburger').addEventListener('click', function() {
-    document.querySelector('.nav').classList.toggle('active');
-    document.querySelector('.close-arrow').style.display = 'block'; 
-  });
-  
-  document.querySelector('.close-arrow').addEventListener('click', function() {
-    document.querySelector('.nav').classList.remove('active');
-    document.querySelector('.close-arrow').style.display = 'none'; 
-  });
 
