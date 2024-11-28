@@ -96,5 +96,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
+function downloadPDF() {
+    // Trigger the download
+    const link = document.createElement('a');
+    link.href = 'rhythm-resume.pdf'; // Replace with the actual path of your PDF
+    link.download = 'rhythm-resume.pdf'; // Replace with the desired file name
+    link.click();
+}
 
