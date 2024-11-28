@@ -47,12 +47,15 @@
         <div class="wrapper">
         <section class="portfolio">
             <h1>My Portfolio</h1>
-            <div class="filter-buttons">
-              <button class="filter-button" data-filter="all">All</button>
-              <button class="filter-button" data-filter="Challenge">Challenge</button>
-              <button class="filter-button" data-filter="Web Development">Web Development</button>
-              <button class="filter-button" data-filter="Design">Design</button>
-              <button class="filter-button" data-filter="Prototyping">Prototyping</button>
+            <div class="filter">
+              <label for="project-filter">Filter by Category:</label>
+              <select id="project-filter">
+                  <option value="all">All</option>
+                  <option value="Challenge">Challenge</option>
+                  <option value="Web Development">Web Development</option>
+                  <option value="Design">Design</option>
+                  <option value="Prototyping">Prototyping</option>
+              </select>
           </div>
             <div class="portfolio-grid">
                 <!-- Add 12 portfolio items dynamically using JS -->

@@ -91,6 +91,7 @@ const projects = [
 ];
 document.addEventListener("DOMContentLoaded", () => {
     const portfolioGrid = document.querySelector(".portfolio-grid");
+    const filterDropdown = document.getElementById("project-filter");
 
     function displayProjects(projectsToDisplay) {
         portfolioGrid.innerHTML = ""; // Clear existing projects
@@ -108,14 +109,13 @@ document.addEventListener("DOMContentLoaded", () => {
             portfolioGrid.appendChild(projectCard);
         });
     }
-    displayProjects(projects);
-    const filterButtons = document.querySelectorAll('.filter-button');
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const filter = button.getAttribute('data-filter');
-            const filteredProjects = filter === 'all' ? projects : projects.filter(project => project.category === filter);
-            displayProjects(filteredProjects);
-        });
+
+    displayProjects(projects); // Display all projects initially
+
+    filterDropdown.addEventListener('change', () => {
+        const filter = filterDropdown.value; // Get selected value
+        const filteredProjects = filter === 'all' ? projects : projects.filter(project => project.category === filter);
+        displayProjects(filteredProjects); // Display filtered projects
     });
 });
 
