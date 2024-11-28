@@ -134,67 +134,29 @@ main p {
   margin-bottom: 10px;
 
 }
-.contact-container,
-.faq-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  min-height: 500px;
-  text-align: left;
-  box-sizing: border-box;
-  color: #51291a;
-}
 
-.contact-container h1{
-  text-align: left;
-  width: 100%;
-  color: #51291a;
-}
 
-.contact form {
-  width: 100%;
-  box-sizing: border-box;
-  padding-right: 1rem;
-}
-
-.contact form .form-container {
+main form {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  box-sizing: border-box;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   color: #51291a;
 }
-
-.contact form .form-group {
-  flex: 1;
-  margin-right: 0;
-  margin-bottom: 15px;
-  width: 100%;
+main form .form-item {
   color: #51291a;
-}
-
-.contact form input,
-.contact form textarea {
-  width: 100%;
-  padding: 10px;
   margin-bottom: 10px;
-  font-size: 14px;
-  color: #51291a;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+  border: 1px solid #d5b74f;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-size: 20px;
 }
 
-.contact form input[type="text"],
-.contact form input[type="email"] {
-  height: 32px;
-  color: #51291a;
-}
 
-.contact form textarea {
-  resize: none;
-  height: 150px;
-  color: #51291a;
-}
 
 .contact form button {
   display: block;
@@ -214,6 +176,14 @@ main p {
   color: #d5b74f;
   border: 1px solid #d5b74f;
   cursor: pointer;
+}
+.contact-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #51291a;
 }
 
 button {

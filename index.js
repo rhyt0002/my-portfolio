@@ -86,39 +86,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-    // Initialize EmailJS
-    emailjs.init("-7__kImZg6FbZKpgr");
-  
-    // Add event listener to the form
-    const contactForm = document.getElementById("contact-form");
-    contactForm.addEventListener("submit", (e) => {
-      e.preventDefault(); // Prevent default form submission
-  
-      // Collect form data
-      const rhythmcontact = {
-        name: document.getElementById("fullname").value,
-        email: document.getElementById("email").value,
-        subject: document.getElementById("subject").value,
-        message: document.getElementById("message").value,
-      };
-  
-      // Send email using EmailJS
-      emailjs
-        .send("service_rhythm", "rhythm-contact", rhythmcontact)
-        .then(
-          (response) => {
-            alert("Message sent successfully!");
-            console.log("SUCCESS!", response.status, response.text);
-            contactForm.reset(); // Clear the form after successful submission
-          },
-          (error) => {
-            alert("Failed to send message. Please try again later.");
-            console.error("FAILED...", error);
-          }
-        );
-    });
-  });
+
+
 
 document.querySelector('.hamburger').addEventListener('click', function() {
     document.querySelector('.nav').classList.toggle('active');
